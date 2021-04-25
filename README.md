@@ -10,7 +10,7 @@ This guide explains how you can run Overload and olmod game code in debug mode b
 - Add the executable and assemblies to the dnSpy Assemblies Explorer (left pane) in dnSpy. 
   - For debugging olmod, this would be your debug build of olmod.exe and GameMod.dll alongside Overload\Overload_Data\Managed\Assembly-CSharp.dll. 
   - If you are after the unmodified code, add instead Overload.exe and Assembly-CSharp.dll. 
-- Debug in dnSpy. Make sure to select the Unity debugger type.
+- Debug in dnSpy: Select olmod.exe or Overload.exe in the Assembly Explorer and hit Start. Make sure to select the Unity debugger type from the "Debug Program" dialog.
 
 ### Why debug?
 Debugging can help speed up the development cycle. Without the option for debugging, you may have to rely on issuing debug statements to log files. With code you can debug, you can set breakpoints, inspect the game state, and step through specific parts of the code. 
@@ -37,8 +37,9 @@ This can be useful for understanding the original source code undisturbed by any
 
 - Add Overload.exe and Overload\Overload_Data\ManagedAssembly-CSharp.dll to the Assembly Explorer in dnSpy
 - Set breakpoints as needed
-- Select Debug - Start Debugging (F5) from the menu
-- Select Unity as the debug engine
+- Click on/select Overload.exe in the Assmbly Explorer. 
+- Select "Debug" - "Start Debugging (F5)" from the menu, or just hit "Start"
+- Select Unity as the debug engine from the "Debug Program" dialog
 - Hit OK
 
 ### Debug the modded game code
@@ -48,8 +49,9 @@ This will be your typical setup to debug olmod.
 - Add GameMod.dll to the Assembly Explorer in dnSpy
     - Make sure this is the GameMod.dll (debug build) which is referenced by the olmod.exe you added in the previous step
 - Set breakpoints as needed
-- Select Debug - Start Debugging (F5) from the menu
-- Select Unity as the debug engine
+- Click on/select olmod.exe in the Assmbly Explorer. 
+- Select "Debug" - "Start Debugging (F5)" from the menu, or just hit "Start"
+- Select Unity as the debug engine from the "Debug Program" dialog
 - Hit OK
 
 ### Debug server vs client - standalone or at the same time
